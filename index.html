@@ -3,20 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <script type="module" defer src="script.mjs"></script>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <form action="#">
-        <input id="userInput" type="text" placeholder="City Name"/>
-        <input id="submitBtn" type="submit" value="">
+    <!--
+  Heads up! 👋
 
-    </form>
-    <div id="locationInfo">
-        <h1 id="locationName"></h1>
-        <p id="info"></p>
+  Plugins:
+    - @tailwindcss/forms
+-->
+
+<div id="header">
+    <div class="sm:hidden">
+      <label for="Tab" class="sr-only">Tab</label>
+  
+      <select id="Tab" class="w-full rounded-md border-gray-200">
+        <option>Settings</option>
+        <option>Messages</option>
+        <option>Archive</option>
+        <option select>Notifications</option>
+      </select>
     </div>
-    
+  
+    <div class="hidden sm:block">
+      <nav class="flex gap-6" aria-label="Tabs">
+        <a
+          href="#"
+          class="shrink-0 rounded-lg p-2 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+        >
+          Settings
+        </a>
+  
+        <a
+          href="#"
+          class="shrink-0 rounded-lg p-2 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+        >
+          Messages
+        </a>
+  
+        <a
+          href="#"
+          class="shrink-0 rounded-lg p-2 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+        >
+          Archive
+        </a>
+  
+        <a
+          href="#"
+          class="shrink-0 rounded-lg bg-gray-100 p-2 text-sm font-medium text-gray-700"
+          aria-current="page"
+        >
+          Notifications
+        </a>
+      </nav>
+    </div>
+  </div>
+
+<div id="body">
+    <h4>YOUR WEATHER WHEN YOU NEED IT</h4>
+    <h1>Step into Tomorrow's Weather Today. <br> Your Ultimate Forecast Destination</h1>
+    <h4>Empowering You with Precision Forecasting: Where Weather Meets Technology for Seamless Planning and Peace of Mind.</h4>
+    <a href="App/api.html"><button>Get Started</button></a>
+    <img id="heroImage" src="" alt="">
+</div>
+
 </body>
 </html>

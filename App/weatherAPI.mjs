@@ -2,8 +2,9 @@ const API_KEY = '69bd5ea57054d08c3205e7cdf6d83b37';
 const limit = 5;
 const units = 'imperial'
 
+// Get request
 async function weatherAPI(cityName) {
-    // Get request
+    
     fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${API_KEY}`, {
         method: "GET"
     })
@@ -19,8 +20,9 @@ async function weatherAPI(cityName) {
                 .then(response => response.json())
                 .then((data) => {
 
-                    // console.log(data);
+                    console.log(data);
                     locationName.textContent = data.name;
+                    imageIcon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`)
                     info.innerHTML = `
                     Feels like: ${data.main.feels_like} <br/> <br/>
                     Humidity: ${data.main.humidity} <br/> <br/>

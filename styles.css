@@ -1,4 +1,24 @@
+
+
 body {
-    background-color: black;
+    background-color: gray;
     color: white;
+}
+
+#header {
+    margin-left: 80%;
+    
+}
+
+#body {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: rgb(154, 230, 255);
+    color: black;
+    padding: 5px;
 }

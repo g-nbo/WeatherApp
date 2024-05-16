@@ -1,4 +1,3 @@
-
 // Post Request
 async function userManip(cityName) {
     fetch('https://jsonplaceholder.typicode.com/posts', {
@@ -15,3 +14,5 @@ async function userManip(cityName) {
         .then((response) => response.json())
         .then((json) => console.log(json));
 }
+
+export { userManip }
