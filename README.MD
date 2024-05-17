@@ -3,7 +3,6 @@
 
 This program allows you to get the weather from any city in the world from a click of a button!
 
-Try it out: https://g-nbo.github.io/WeatherApp/
 ## Features
 
 - Allows you to search for your city and get its location in seconds.
