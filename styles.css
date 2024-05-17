@@ -1,24 +1,27 @@
-
-
 body {
-    background-color: gray;
+    background-image: url("../images/cloud_background_stock.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
+
 }
 
 #header {
-    margin-left: 80%;
-    
+    margin-top: 1%;
+    margin-left: 78%;
 }
 
-#body {
+#main {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+    height: 80vh;
+
 }
 
-button {
-    background-color: rgb(154, 230, 255);
-    color: black;
-    padding: 5px;
+#main h1 {
+    font-size: 55px;
+    font-weight: 1000;
+    /* -webkit-text-stroke: 1px #000000; */
 }

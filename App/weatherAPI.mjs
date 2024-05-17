@@ -2,9 +2,18 @@ const API_KEY = '69bd5ea57054d08c3205e7cdf6d83b37';
 const limit = 5;
 const units = 'imperial'
 
+locationName.textContent = 'Your City';
+imageIcon.setAttribute("src", `https://openweathermap.org/img/wn/10d@2x.png`)
+info.innerHTML = `
+                Feels like:  <br/> <br/>
+                Humidity:  <br/> <br/>
+                Temperature:  <br/> <br/>
+                Max Temp:  <br/> <br/>
+                Min Temp:  <br/> <br/>
+                `
 // Get request
 async function weatherAPI(cityName) {
-    
+
     fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${API_KEY}`, {
         method: "GET"
     })
@@ -33,6 +42,15 @@ async function weatherAPI(cityName) {
                 })
         })
         .catch((err) => {
+            locationName.textContent = 'Check spelling?';
+            imageIcon.setAttribute("src", `https://openweathermap.org/img/wn/10n@2x.png`)
+            info.innerHTML = `
+                Feels like:  <br/> <br/>
+                Humidity:  <br/> <br/>
+                Temperature:  <br/> <br/>
+                Max Temp:  <br/> <br/>
+                Min Temp:  <br/> <br/>
+                `
             console.log(err);
         })
 }

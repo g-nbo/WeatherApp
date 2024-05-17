@@ -1,4 +1,61 @@
 body {
-    background-color: black;
+    background-image: url("../images/cloud_background_stock.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
+    
+}
+
+#main {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    
+}
+
+#header {
+    margin-top: 1%;
+    margin-left: 78%;
+}
+
+#userInput {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    width: 300px;
+    height: 40px;
+    border: solid black 4px;
+}
+
+#submitBtn {
+    display: none;
+}
+
+#locationInfo {
+    border: solid black 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    width: 800px;
+    height: 600px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#locationInfo img {
+    background-color: black;
+    
+}
+
+#main a {
+    width: 300px;
+    font-size: 20px;
+    text-decoration: none;
 }
